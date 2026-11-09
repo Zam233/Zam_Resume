@@ -1,0 +1,207 @@
+/* ---------------------------------------------------------------------------
+   Material You (M3) tokens for this page.
+
+   Palette is anchored on three given colours:
+     顶部个人信息  #e3f2fd   (hero block background)
+     主文字        #0f58d0   (titles, accents, numbers)
+     其他文字      #001345   (body copy)
+   Every other role is derived along the same blue tonal ramp — flat fills
+   only, no gradients anywhere.
+
+   Sober declares its default tokens on `s-page :host`; a same-specificity
+   declaration from the outer document wins, so seeding them here is enough.
+   The dark ramp is read by Sober's `:host([dark])` block.
+--------------------------------------------------------------------------- */
+
+:root {
+  --font-serif: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', STSong, 'SimSun', serif;
+  --font-sans: 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Microsoft YaHei',
+    'Hiragino Sans GB', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Mono', 'SFMono-Regular', Consolas, 'Liberation Mono',
+    monospace;
+
+  --page-max: 1180px;
+  --radius-xl: 32px;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+
+  /* the one colour that is not part of the M3 role set */
+  --app-hero: #e3f2fd;
+
+  /* soft pill that covers the names the source PDF blanks out with □ */
+  --redact-fill: #c7d8f7;
+
+  --hairline: color-mix(in srgb, var(--s-color-outline-variant) 70%, transparent);
+  --hairline-soft: color-mix(in srgb, var(--s-color-outline-variant) 45%, transparent);
+  --state-hover: color-mix(in srgb, var(--s-color-on-surface) 6%, transparent);
+
+  --ease-emphasized: cubic-bezier(0.2, 0, 0, 1);
+}
+
+html[data-theme='dark'] {
+  --app-hero: #12294a;
+  --redact-fill: #35507f;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+s-page {
+  /* light ramp ------------------------------------------------------------- */
+  --s-color-primary: #0f58d0;
+  --s-color-on-primary: #ffffff;
+  --s-color-primary-container: #d8e4ff;
+  --s-color-on-primary-container: #001345;
+  --s-color-secondary: #3c5c96;
+  --s-color-on-secondary: #ffffff;
+  --s-color-secondary-container: #dbe3f8;
+  --s-color-on-secondary-container: #0b1b33;
+  --s-color-tertiary: #1b5f7d;
+  --s-color-on-tertiary: #ffffff;
+  --s-color-tertiary-container: #cfe8f6;
+  --s-color-on-tertiary-container: #002b3d;
+  --s-color-error: #ba1a1a;
+  --s-color-on-error: #ffffff;
+  --s-color-error-container: #ffdad6;
+  --s-color-on-error-container: #410002;
+  --s-color-background: #fbfcff;
+  --s-color-on-background: #001345;
+  --s-color-surface: #fbfcff;
+  --s-color-on-surface: #001345;
+  --s-color-surface-variant: #dfe8f8;
+  --s-color-on-surface-variant: #3d5a86;
+  --s-color-outline: #6d84a8;
+  --s-color-outline-variant: #c3d3e8;
+  --s-color-inverse-surface: #0b1b33;
+  --s-color-inverse-on-surface: #eef3ff;
+  --s-color-inverse-primary: #b3c7ff;
+  --s-color-surface-container-lowest: #ffffff;
+  --s-color-surface-container-low: #f5f9ff;
+  --s-color-surface-container: #eff5ff;
+  --s-color-surface-container-high: #e8f0fe;
+  --s-color-surface-container-highest: #e0eafa;
+
+  /* dark ramp -------------------------------------------------------------- */
+  --s-color-dark-primary: #b3c7ff;
+  --s-color-dark-on-primary: #002e6a;
+  --s-color-dark-primary-container: #123f8f;
+  --s-color-dark-on-primary-container: #d8e4ff;
+  --s-color-dark-secondary: #b9c8e8;
+  --s-color-dark-on-secondary: #1d3054;
+  --s-color-dark-secondary-container: #26385a;
+  --s-color-dark-on-secondary-container: #dbe3f8;
+  --s-color-dark-tertiary: #9fd0e8;
+  --s-color-dark-on-tertiary: #003549;
+  --s-color-dark-tertiary-container: #17485f;
+  --s-color-dark-on-tertiary-container: #cfe8f6;
+  --s-color-dark-error: #ffb4ab;
+  --s-color-dark-on-error: #690005;
+  --s-color-dark-error-container: #93000a;
+  --s-color-dark-on-error-container: #ffdad6;
+  --s-color-dark-background: #050f21;
+  --s-color-dark-on-background: #e4ecfb;
+  --s-color-dark-surface: #050f21;
+  --s-color-dark-on-surface: #e4ecfb;
+  --s-color-dark-surface-variant: #2c3f5e;
+  --s-color-dark-on-surface-variant: #b3c6e2;
+  --s-color-dark-outline: #7d90b3;
+  --s-color-dark-outline-variant: #2c3f5e;
+  --s-color-dark-inverse-surface: #e4ecfb;
+  --s-color-dark-inverse-on-surface: #0b1b33;
+  --s-color-dark-inverse-primary: #0f58d0;
+  --s-color-dark-surface-container-lowest: #030a18;
+  --s-color-dark-surface-container-low: #09152a;
+  --s-color-dark-surface-container: #0d1c33;
+  --s-color-dark-surface-container-high: #122440;
+  --s-color-dark-surface-container-highest: #182c4b;
+
+  /* the host normally sets `Roboto, system-ui`; the page keeps its own stack */
+  font-family: var(--font-sans);
+  height: auto;
+  min-height: 100dvh;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+  background: #fbfcff;
+}
+
+html[data-theme='dark'] {
+  background: #050f21;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--s-color-background);
+  color: var(--s-color-on-background);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+::selection {
+  background: var(--s-color-primary-container);
+  color: var(--s-color-on-primary-container);
+}
+
+:focus-visible {
+  outline: 2px solid var(--s-color-primary);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* --- Sober component tweaks ------------------------------------------------
+   `s-card` ships as a 280px-wide inline-block tile; the resume uses it as a
+   full-width tonal panel. Larger radii keep the M3 "squircle-ish" feel. */
+
+s-card {
+  display: block;
+  max-width: none;
+  border-radius: var(--radius-lg);
+  box-shadow: none;
+}
+
+s-card[type='outlined'] {
+  background: var(--s-color-surface-container-low);
+  border: 1px solid var(--hairline);
+}
+
+s-chip {
+  --s-chip-height: 30px;
+}
+
+s-tab {
+  background: transparent;
+  min-width: 0;
+}
+
+s-navigation {
+  background: transparent;
+  --s-color-surface: transparent;
+}

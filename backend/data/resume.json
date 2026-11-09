@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "source": "简历.pdf",
+    "updated": "2026-11",
+    "note": "内容依据原始 PDF 简历整理；部分机构名称在原件中即以方框隐去，此处以圆角色块标示。"
+  },
+  "profile": {
+    "name": "扎姆",
+    "latin": "ZAM",
+    "age": 26,
+    "status": "硕士在读（预计 2027.06 毕业）",
+    "address": "上海市宝山区上大路 99 号 上海大学",
+    "fields": ["INTJ", "务实的理想主义者", "会把理论做成工具的人"],
+    "summary": "较真、坐得住，认准方向能研究到半夜、从零做到可交付，不糊弄。擅长跨域抽象：把“想清楚”接上“做出来”，懂创作者需求并转为可工程化结构。学习以输出倒逼输入，每学必产出。更擅独当一面、边界清晰可验收；团队需要时也能在技术方向统一标准。总之，我是能把想法变成作品、并为作品负责的人。",
+    "portrait": "/assets/portrait.png"
+  },
+  "skills": [
+    { "name": "Photoshop", "group": "视觉" },
+    { "name": "Premiere / 剪映", "group": "视觉" },
+    { "name": "Figma", "group": "视觉" },
+    { "name": "前端设计", "group": "视觉" },
+    { "name": "微信公众号", "group": "内容" },
+    { "name": "深度研究+文案写作", "group": "内容" },
+    { "name": "Markdown", "group": "工具" },
+    { "name": "Python / JS", "group": "工具" },
+    { "name": "Linux", "group": "工具" },
+    { "name": "AI原生工作方式", "group": "工具" },
+    { "name": "自媒体矩阵搭建", "group": "工具" }
+
+  ],
+  "certificates": [
+    "CET-6",
+    "电子商务师",
+    "普通话二甲",
+    "全国计算机二级",
+    "上海高校计算机一级"
+  ],
+  "aiAgents": ["Deepseek Harness", "Opencode", "Claude Code", "Zcode", "Gemini Cli"],
+  "accounts": [
+    { "platform": "哔哩哔哩", "handle": "扎姆", "followers": "3.7 万", "note": "认证账号", "url": "https://space.bilibili.com/1867740" },
+    { "platform": "知乎", "handle": "扎姆", "followers": "4245", "note": "关注者", "url": "https://www.zhihu.com/people/zha-mu-zam" },
+    { "platform": "小红书", "handle": "扎姆", "followers": "326", "note": "粉丝", "url": "https://www.xiaohongshu.com/user/profile/62ee5602000000001f015b78" },
+    { "platform": "Github", "handle": "Zam233", "followers": "12", "note": "Followers", "url": "https://github.com/Zam233" },
+    { "platform": "X", "handle": "Zam", "followers": "51", "note": "关注者", "url": "https://x.com/SqridmusZam" }
+  ],
+  "education": [
+    {
+      "school": "上海大学",
+      "degree": "哲学硕士",
+      "major": "马克思主义哲学",
+      "gpa": "3.7 / 4",
+      "period": "2024.09 — 至今",
+      "current": true,
+      "items": [
+        { "kind": "note", "text": "参与组织 第二届上海高校城市地理与公共交通论坛" },
+        { "kind": "thesis", "text": "毕业论文《算法时代□□□□□□的研究》" }
+      ]
+    },
+    {
+      "school": "上海□□学院",
+      "degree": "文学学士",
+      "major": "新闻学",
+      "gpa": "3.63 / 4",
+      "period": "2021.09 — 2023.06",
+      "items": [
+        { "kind": "note", "text": "纪录片《路标》、实验片《坏椅子》，并担任导演与剪辑" },
+        { "kind": "thesis", "text": "毕业论文《亚文化传播观念视域下哲学科普内容传播探析——以 B 站 up 主未明子为例》" }
+      ]
+    },
+    {
+      "school": "上海□□□□职业学院",
+      "degree": "电子商务",
+      "major": "",
+      "gpa": "均分 83 / 100",
+      "period": "2018.09 — 2021.06",
+      "items": [
+        { "kind": "role", "text": "曾任□□□□社 技术顾问" },
+        { "kind": "role", "text": "曾任□□□□学院团委学生会 技术部部长" },
+        { "kind": "award", "text": "获第四届“□□□”全国移动商务技能竞赛 全国总决赛□等奖" },
+        { "kind": "thesis", "text": "毕业论文《浅谈 B 站亚文化的身份认同与新媒体内容运营》" }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "上海□□□□网络有限公司",
+      "role": "运营管培生",
+      "period": "2023.03 — 2024.06",
+      "bullets": [
+        "负责自媒体账号的从零起步与矩阵建设，实现某账号冷启动粉丝量到 2.5 万。",
+        "负责收藏品领域的文章撰写、视觉处理及短视频全流程策划、拍摄与剪辑。",
+        "搭建排期与任务管理系统，优化流程实现内容生产流水线化，提升协作效率。",
+        "深度参与“□□国际钱币博览会暨□□卡博会”的招商、策划、设计及宣发实施。",
+        "负责 TCG 卡牌业务规则与流程制定、招商及宣发，跟进 TCG 卡牌专区 App 开发流程。"
+      ]
+    },
+    {
+      "company": "上海□□□□网络有限公司",
+      "role": "视频剪辑（B 站方向）",
+      "period": "2020.12 — 2021.05",
+      "bullets": [
+        "建立从选题策划、脚本撰写到后期剪辑的全流程标准化工作流。",
+        "直播业务的美工素材库建设，产出高标准的直播贴片、封面图。"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "帧艺 ClipWright",
+      "subtitle": "视频生产多模态智能体编排系统",
+      "summary": "面向视频生产的多模态智能体系统：用户给出选题或文稿，系统理解需求、规划结构、检索素材、自动剪辑、编排动画与配音、质检自愈并渲染交付成片。",
+      "link": "https://github.com/Zam233/Clipwright_Enigine",
+      "linkLabel": "github.com/Zam233/Clipwright_Enigine",
+      "tags": ["多模态", "智能体编排"]
+    },
+    {
+      "title": "Lark□□□□bot",
+      "subtitle": "AI 原生写作工作流控制系统",
+      "summary": "AI 原生的写作工作流控制系统。基于飞书平台实现 LLM 会话管理、文本模型识图、意图识别、选题与文章辅导、AI 文章审阅、选题管理、创作工作流等功能，已交付北京某高校。",
+      "tags": ["飞书平台", "LLM"]
+    },
+    {
+      "title": "AI 学术论文辅导工具",
+      "subtitle": "多 Agent 协作的成文流水线",
+      "summary": "由网页、知识库搜索、文献 API 等工具构成，多 Agent 协作，经由固定链路成文，撰写耗时缩短数倍。",
+      "pipeline": ["Planner", "Writer", "Auditor", "Librarian", "Consistency", "Blind-Review", "Steward"],
+      "tags": ["多 Agent", "知识库"],
+      "link": "https://github.com/Zam233/Multi-Agent-Academic-Writing-Pipeline"
+    },
+    {
+      "title": "消费主义批判思想简史",
+      "subtitle": "系列视频 · 项目负责人",
+      "summary": "统筹策划并制作“消费主义简史”系列视频，组织团队完成万字文稿撰写并独自完成全片剪辑，结合当代消费现象，产出具有传播深度的思想类内容。",
+      "tags": ["工作流","策划","剪辑"]
+    }
+  ],
+  "otherProjects": [
+    { "time": "2026","text": "NIMBY Rails GCJ-02 瓦片代理" },
+    { "time": "2023.03", "text": "北京某医美公司相关海报、详情页、展会现场的美工制作" },
+    { "time": "2021.11", "text": "路标读书会 视频剪辑" },
+    { "time": "2021.07", "text": "上海某婚纱店店铺全套装修（商品头图、详情页、海报）" },
+    { "time": "2020.08 — 2021.03", "text": "组织团队制作《五分钟政经学》系列" },
+    { "time": "2020.03 — 2020.07", "text": "组织团队制作《消费主义批判思想简史》系列" }
+  ]
+}

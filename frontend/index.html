@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#fff8f5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#18120f" media="(prefers-color-scheme: dark)" />
+    <meta name="description" content="扎姆的个人简历：哲学硕士在读，新闻学本科，内容运营与视频剪辑。" />
+    <title>扎姆 · 简历</title>
+    <link rel="icon" href="./assets/seal.svg" type="image/svg+xml" />
+    <script>
+      // Paint the right backdrop before React mounts, mirroring useTheme():
+      // ?theme= wins, then localStorage, then the system preference.
+      try {
+        var q = new URLSearchParams(location.search).get('theme');
+        var saved = localStorage.getItem('resume-theme');
+        var dark =
+          q === 'dark' ||
+          (q !== 'light' &&
+            (saved === 'dark' ||
+              (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)));
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        document.documentElement.style.background = dark ? '#18120f' : '#fff8f5';
+      } catch (error) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
